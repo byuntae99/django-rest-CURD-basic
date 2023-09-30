@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form action="{% url 'data' %}" method="POST">
+            {% csrf_token %}
+            <lable>Name</lable>
+            <input type="text" name="nameofperson" />
+            <lable>Age</lable>
+            <input type="text" name="age"/>
+            <input type="submit" />
+        </form>
+    </body>
+    </html>
